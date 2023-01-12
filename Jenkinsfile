@@ -6,7 +6,7 @@ pipeline {
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
         maven "M3"
-        mvn -f my-app/pom.xml
+        mvn -f assign1dev/my-app/pom.xml
     }
 
  
