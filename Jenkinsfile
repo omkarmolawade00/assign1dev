@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 
-                mvn -f my-app/pom.xml  
+                 set ROOT POM = pom.xml
                 // Get some code from a GitHub repository
                 git 'https://github.com/omkarmolawade00/assign1dev.git'
 
