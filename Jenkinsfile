@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/SubramanyaShastri/dev-project1.git'
+                git 'https://github.com/omkarmolawade00/assign1dev.git'
 
  
 
