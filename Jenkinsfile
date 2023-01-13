@@ -19,7 +19,9 @@ pipeline {
                 // Get some code from a GitHub repository
                 git 'https://github.com/omkarmolawade00/assign1dev.git'
 
-                   dir("C:/ProgramData/Jenkins/.jenkins/workspace/assign1demo_master")
+                dir("C:/ProgramData/Jenkins/.jenkins/workspace/assign1demo_master") {
+                     sh "pwd"
+                }
 
                 // Run Maven on a Unix agent.
                 bat "mvn -Dmaven.test.failure.ignore=true clean package"
