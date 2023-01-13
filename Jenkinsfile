@@ -19,8 +19,8 @@ pipeline {
                 // Get some code from a GitHub repository
                 git 'https://github.com/omkarmolawade00/assign1dev.git'
 
-                dir("C:/ProgramData/Jenkins/.jenkins/workspace/assign1demo_master") {
-                     sh "pwd"
+                dir("C:/ProgramData/Jenkins/.jenkins/workspace/assign1demo_master")  {
+                 bat ' '
                 }
 
                 // Run Maven on a Unix agent.
