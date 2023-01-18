@@ -15,7 +15,7 @@ pipeline {
                 withSonarQubeEnv('sonardemo') {
                     // Optionally use a Maven environment you've configured already
                     withMaven(maven:'M3') {
-                        dir("C:\ProgramData\Jenkins\.jenkins\workspace\assign1demo_master") {
+                        dir("C:/ProgramData/Jenkins/.jenkins/workspace/assign1demo_master") {
                         bat 'mvn clean package sonar:sonar'
                     }
                 }
