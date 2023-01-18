@@ -3,11 +3,12 @@ pipeline {
     tools {
        jdk 'java'
         maven 'M3'
-        sonar.analysis.mode=publish
+        
      
 
     }
     stages {
+        sonar.analysis.mode=publish
         stage('build && SonarQube analysis') {
             steps {
 //                bat "sonar-scanner"
