@@ -11,7 +11,7 @@ pipeline {
         
         stage('build && SonarQube analysis') {
             steps {
-//                bat 'sonar-scanner'
+//                bat "sonar-scanner"
                 withSonarQubeEnv('sonardemo') {
                     // Optionally use a Maven environment you've configured already
                     withMaven(maven:'M3') {
