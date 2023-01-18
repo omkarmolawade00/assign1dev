@@ -8,7 +8,7 @@ pipeline {
 
     }
     stages {
-        sonar.analysis.mode=publish
+        
         stage('build && SonarQube analysis') {
             steps {
 //                bat "sonar-scanner"
