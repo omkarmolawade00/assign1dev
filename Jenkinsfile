@@ -3,6 +3,7 @@ pipeline {
     tools {
        jdk 'java'
         maven 'M3'
+        sonar.analysis.mode=publish
      
 
     }
